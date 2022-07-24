@@ -35,36 +35,47 @@
     </style>
   </head>
   <body>
-    <main class="main">
+    <main class="main flex flex-ai-c">
       <div class="card">
-        <picture class="card-img">
-          <source
-            srcset="./images/image-header-desktop.jpg"
-            media="(min-width: 2000px)"
-          />
-
-          <img src="./images/image-header-mobile.jpg" alt="card image" />
-        </picture>
+        <div class="hero-section">
+          <picture>
+            <source
+              srcset="./images/image-header-desktop.jpg"
+              media="(min-width: 1340px)"
+            />
+            <img
+              class="card-img"
+              src="./images/image-header-mobile.jpg"
+              alt="card image"
+            />
+          </picture>
+        </div>
 
         <div class="card-content">
-          <h1>Get insights that help your business grow.</h1>
-          <p>
-            Discover the benefits of data analytics and make better decisions
-            regarding revenue, customer experience, and overall efficiency.
-          </p>
+          <div class="title-section">
+            <h1 class="title">
+              Get <span>insights</span> that help your business grow.
+            </h1>
+          </div>
+          <div class="text-section">
+            <p class="text">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+          </div>
 
-          <div class="stats">
-            <div class="stat-1">
+          <div class="stats-section">
+            <div class="stat stat-1">
+              <p class="stat-number">10k+</p>
               <p class="stat-heading">companies</p>
-              <p class="stat">10k+</p>
             </div>
-            <div class="stat-2">
+            <div class="stat stat-2">
+              <p class="stat-number">314</p>
               <p class="stat-heading">templates</p>
-              <p class="stat">314</p>
             </div>
-            <div class="stat-3">
+            <div class="stat stat-3">
+              <p class="stat-number">12M+</p>
               <p class="stat-heading">queries</p>
-              <p class="stat">12m+</p>
             </div>
           </div>
         </div>
