@@ -70,7 +70,7 @@ img {
   border-radius: 7px;
   display: flex;
   flex-direction: column;
-  max-width: 650px;
+  max-width: 550px;
 }
 
 .card-img {
@@ -84,7 +84,7 @@ img {
 .hero-section::after {
   content: "";
   display: block;
-  background-color: rgba(170, 92, 219, 0.6);
+  background-color: rgba(170, 92, 219, 0.7);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -103,7 +103,7 @@ img {
 }
 
 .title-section {
-  margin-bottom: 0.6em;
+  margin-bottom: 1.2em;
 }
 .title {
   font-size: 1.75rem;
@@ -150,29 +150,59 @@ img {
   color: var(--clr-white-600);
 }
 
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 1300px) {
   .card {
     flex-direction: row;
-    max-width: 1100px;
-  }
-
-  .hero-section {
-    order: 1;
-    min-width: 446px;
-    border-radius: 0;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-  }
-
-  .hero-section::after {
-    border-radius: 0;
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
+    min-width: fit-content;
   }
 
   .card-img {
     border-radius: 0;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
+    height: 100%;
+  }
+
+  .hero-section,
+  .hero-section::after {
+    border-radius: 0;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+
+  .hero-section {
+    order: 1;
+  }
+
+  .card-content {
+    text-align: left;
+    padding-top: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  .title-section {
+    margin-bottom: 1.5em;
+  }
+
+  .title {
+    max-width: 450px;
+    margin: 0;
+    font-size: 2.3rem;
+  }
+
+  .text-section {
+    margin-bottom: 5em;
+  }
+
+  .text {
+    margin: 0;
+    max-width: 390px;
+    line-height: 1.9;
+  }
+
+  .stats-section {
+    display: flex;
+    gap: 3.5em;
   }
 }
